@@ -14,12 +14,12 @@ describe("Sequence", () => {
   });
 
   describe("#next", () => {
-    it("generates next state", () => {
-      expect(String(sequence.next())).toBe("11");
-    });
-
     it("returns instance of Sequence", () => {
       expect(sequence.next()).toBeInstanceOf(Sequence);
+    });
+
+    it("generates next state", () => {
+      expect(String(sequence.next())).toBe("11");
     });
 
     it("generates next state 2 times", () => {
